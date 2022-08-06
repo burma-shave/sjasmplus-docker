@@ -8,4 +8,4 @@ WORKDIR /sjasmplus
 
 FROM ubuntu:latest
 RUN apt-get update && apt install make 
-COPY --from=build /sjasmplus/sjasmplus /usr/local/bin/sjasmplus
+# COPY --from=build /sjasmplus/sjasmplus /usr/local/bin/sjasmplus
