@@ -6,6 +6,9 @@ on:
 
   workflow_dispatch:
 
+env:
+  SJASMPLUS_VER=1.20.1
+
 jobs:
   login:
     runs-on: ubuntu-latest
@@ -27,8 +30,8 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           push: true
-          build-args: SJASMPLUS_VER=v1.20.0
+          build-args: SJASMPLUS_VER=${{ env.SJASMPLUS_VER }}
           # platforms: linux/amd64,linux/arm64,linux/arm/v7
-          tags: burma5have/sjasmplus:v1.20.0,burma5have/sjasmplus:latest
+          tags: burma5have/sjasmplus:${{ env.SJASMPLUS_VER }},burma5have/sjasmplus:latest
 
   
