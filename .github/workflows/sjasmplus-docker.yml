@@ -29,6 +29,6 @@ jobs:
           push: true
           build-args: SJASMPLUS_VER=v1.20.1
           # platforms: linux/amd64,linux/arm64,linux/arm/v7
-          tags: burma5have/sjasmplus:v1.20.1,latest
+          tags: burma5have/sjasmplus:v1.20.1,burma5have/sjasmplus:v1.20.1:latest
 
   
